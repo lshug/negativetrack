@@ -1,0 +1,16 @@
+<MainScreen>:
+    orientation: 'vertical'
+    BoxLayout:
+        Label:
+            id: last_relapse_label
+            text: 'Last relapse: calculating...'
+        Button:
+            text: 'Relapse'
+            on_press: root.record_relapse(self)
+        Button:
+            text: 'Stats'
+            on_press: root.show_stats(self)
+
+<StatsScreen>:
+    orientation: 'vertical'    
+    # Define the stats screen components here
